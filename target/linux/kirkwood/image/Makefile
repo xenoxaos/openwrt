@@ -71,6 +71,14 @@ define Device/cloudengines_pogoplugv4
 endef
 TARGET_DEVICES += cloudengines_pogoplugv4
 
+define Device/dlink_dns320-a1
+  DEVICE_VENDOR := D-Link
+  DEVICE_MODEL := DNS-320 Rev. A1
+  DEVICE_PACKAGES := kmod-ata-marvell-sata kmod-fs-ext4
+  SUPPORTED_DEVICES += dns320
+endef
+TARGET_DEVICES += dlink_dns320-a1
+
 define Device/iom_iconnect-1.1
   DEVICE_VENDOR := Iomega
   DEVICE_MODEL := Iconnect
